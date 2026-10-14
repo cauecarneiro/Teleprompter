@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045B5E18F740C6118D5AF586 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE31DF97F2D5071E347FA56 /* EditorView.swift */; };
+		12069E6791DCF3E2CFF85689 /* PrompterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DFEECBCF6552133153555 /* PrompterController.swift */; };
+		5362A13A29917AEDBE1F7A18 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDED46EAC6528E0ED02534E8 /* HomeView.swift */; };
+		6A520FB116C8F9735EB72666 /* PrompterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A2759681DDD7280E2C41A9 /* PrompterSettings.swift */; };
+		99C0E0EF664EA930739F4D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E9FD58B81BBDED940E946A /* Assets.xcassets */; };
+		B3B0BD38EA2342C1A6073119 /* AudioInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB143DC01FBB91C8686367 /* AudioInputs.swift */; };
+		C0861E30DDC041D33B567295 /* DemoMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81886AB535CF640DF37181A0 /* DemoMode.swift */; };
+		C26C7C068FD5C21E9B3C038A /* TeleprompterCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8F1B7427DD49311BC4328355 /* TeleprompterCore */; };
+		C27B94FAFF6A83DC71E42A74 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E079ECF6BAED267DD8C4310 /* Style.swift */; };
+		C90AD6BADBC9A40262E1F920 /* RecorderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3879F2B8A1B4F9FFD00E200 /* RecorderModel.swift */; };
+		CA2CC995CA0D515FDA1C174F /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73782295534ADEE5C638B4B3 /* RecorderView.swift */; };
+		D1BD2334A74CB813FC18A8EA /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8C88005143ED676157A9C /* CameraController.swift */; };
+		D5317AA1F73D42A984E5279D /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8155EBF43A49A63E6A61D /* CameraPreview.swift */; };
+		D6F349F15905021C50005366 /* PhotoSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E2B50608BB5684978EB3DB /* PhotoSaver.swift */; };
+		D83A28EE050F6E8923ABFB0D /* PrompterTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A7D8E889B107757FCD8E /* PrompterTextView.swift */; };
+		E1F74470D5DFF744C2F7B868 /* VoiceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1310A76EFA3103F656D3A77 /* VoiceTracker.swift */; };
+		EBEAE0733C53640605D5A469 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C065D45FBA8E0AEFE7B1C4D7 /* Components.swift */; };
+		F8B1AAEBB75B1559491F798E /* TeleprompterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6619F720D62EDA1BD462E8 /* TeleprompterApp.swift */; };
+		FCC73C5664995C4A873E808F /* PrompterDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1AD5C6E4A043198B41F00 /* PrompterDocument.swift */; };
+		FCD499B96324A5E01E61D881 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0965B3B5568BB8394493D /* Script.swift */; };
+		FEE1461D7B76322171601FED /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670F7A1AF46B9848246392B /* SettingsSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02E9FD58B81BBDED940E946A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2670F7A1AF46B9848246392B /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		302C2DA7B7C2945B6CA20321 /* Teleprompter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Teleprompter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E079ECF6BAED267DD8C4310 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		49AB143DC01FBB91C8686367 /* AudioInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputs.swift; sourceTree = "<group>"; };
+		4CE1AD5C6E4A043198B41F00 /* PrompterDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterDocument.swift; sourceTree = "<group>"; };
+		56A2759681DDD7280E2C41A9 /* PrompterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterSettings.swift; sourceTree = "<group>"; };
+		576801B1E6E9E3019532CB38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5BF0965B3B5568BB8394493D /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		73782295534ADEE5C638B4B3 /* RecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		77F8155EBF43A49A63E6A61D /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		81886AB535CF640DF37181A0 /* DemoMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMode.swift; sourceTree = "<group>"; };
+		B26DFEECBCF6552133153555 /* PrompterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterController.swift; sourceTree = "<group>"; };
+		B9E2B50608BB5684978EB3DB /* PhotoSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSaver.swift; sourceTree = "<group>"; };
+		BB6619F720D62EDA1BD462E8 /* TeleprompterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleprompterApp.swift; sourceTree = "<group>"; };
+		C065D45FBA8E0AEFE7B1C4D7 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		C3879F2B8A1B4F9FFD00E200 /* RecorderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderModel.swift; sourceTree = "<group>"; };
+		C5B8C88005143ED676157A9C /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		D38B973FB41A48D3D7AF0274 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Core; sourceTree = SOURCE_ROOT; };
+		EDED46EAC6528E0ED02534E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EFA9A7D8E889B107757FCD8E /* PrompterTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrompterTextView.swift; sourceTree = "<group>"; };
+		F1310A76EFA3103F656D3A77 /* VoiceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTracker.swift; sourceTree = "<group>"; };
+		FAE31DF97F2D5071E347FA56 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CD6EFB4101DEA792D129EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26C7C068FD5C21E9B3C038A /* TeleprompterCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040F5F94C6F4EEF7ABA8560A = {
+			isa = PBXGroup;
+			children = (
+				5351D7A2DB8757F419AE015E /* App */,
+				4178E63C7369DF3D1BF344FD /* Packages */,
+				2E0C3F6580EF195BD2AB6F92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		087E4160266180948059E198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BF0965B3B5568BB8394493D /* Script.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E0C3F6580EF195BD2AB6F92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302C2DA7B7C2945B6CA20321 /* Teleprompter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F2ED299328C272D88463E9B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C5B8C88005143ED676157A9C /* CameraController.swift */,
+				77F8155EBF43A49A63E6A61D /* CameraPreview.swift */,
+				B9E2B50608BB5684978EB3DB /* PhotoSaver.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		4178E63C7369DF3D1BF344FD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D38B973FB41A48D3D7AF0274 /* Core */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		45269A95F395997E004A3752 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02E9FD58B81BBDED940E946A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5351D7A2DB8757F419AE015E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F2ED299328C272D88463E9B /* Camera */,
+				087E4160266180948059E198 /* Models */,
+				C684B7AE9A11E4443FAEA907 /* Prompter */,
+				45269A95F395997E004A3752 /* Resources */,
+				C11CBE283BA79F4837722776 /* Speech */,
+				EE60A7FF972A72D02E6D028A /* Support */,
+				E3452C2121C9FB5A3BB6CFDC /* Views */,
+				576801B1E6E9E3019532CB38 /* Info.plist */,
+				BB6619F720D62EDA1BD462E8 /* TeleprompterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C11CBE283BA79F4837722776 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				F1310A76EFA3103F656D3A77 /* VoiceTracker.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		C684B7AE9A11E4443FAEA907 /* Prompter */ = {
+			isa = PBXGroup;
+			children = (
+				B26DFEECBCF6552133153555 /* PrompterController.swift */,
+				4CE1AD5C6E4A043198B41F00 /* PrompterDocument.swift */,
+				EFA9A7D8E889B107757FCD8E /* PrompterTextView.swift */,
+			);
+			path = Prompter;
+			sourceTree = "<group>";
+		};
+		E3452C2121C9FB5A3BB6CFDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C065D45FBA8E0AEFE7B1C4D7 /* Components.swift */,
+				FAE31DF97F2D5071E347FA56 /* EditorView.swift */,
+				EDED46EAC6528E0ED02534E8 /* HomeView.swift */,
+				C3879F2B8A1B4F9FFD00E200 /* RecorderModel.swift */,
+				73782295534ADEE5C638B4B3 /* RecorderView.swift */,
+				2670F7A1AF46B9848246392B /* SettingsSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE60A7FF972A72D02E6D028A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				49AB143DC01FBB91C8686367 /* AudioInputs.swift */,
+				81886AB535CF640DF37181A0 /* DemoMode.swift */,
+				56A2759681DDD7280E2C41A9 /* PrompterSettings.swift */,
+				3E079ECF6BAED267DD8C4310 /* Style.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		725F04B3CB317C61DC8B74DA /* Teleprompter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD431B6B1CEA4C61E210C9E1 /* Build configuration list for PBXNativeTarget "Teleprompter" */;
+			buildPhases = (
+				1B42BD89D2B5E9555F644890 /* Sources */,
+				A43C595B0BD2F0BBF816531F /* Resources */,
+				5CD6EFB4101DEA792D129EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teleprompter;
+			packageProductDependencies = (
+				8F1B7427DD49311BC4328355 /* TeleprompterCore */,
+			);
+			productName = Teleprompter;
+			productReference = 302C2DA7B7C2945B6CA20321 /* Teleprompter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F839A74C3666CD3F82B8DE7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					725F04B3CB317C61DC8B74DA = {
+						DevelopmentTeam = 8B7F7G3Y2U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 579FAA475DA9777C3EBA2D02 /* Build configuration list for PBXProject "Teleprompter" */;
+			developmentRegion = "pt-BR";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 040F5F94C6F4EEF7ABA8560A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5725F10D91329B838F63CDC6 /* XCLocalSwiftPackageReference "Core" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2E0C3F6580EF195BD2AB6F92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				725F04B3CB317C61DC8B74DA /* Teleprompter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A43C595B0BD2F0BBF816531F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C0E0EF664EA930739F4D49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B42BD89D2B5E9555F644890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B0BD38EA2342C1A6073119 /* AudioInputs.swift in Sources */,
+				D1BD2334A74CB813FC18A8EA /* CameraController.swift in Sources */,
+				D5317AA1F73D42A984E5279D /* CameraPreview.swift in Sources */,
+				EBEAE0733C53640605D5A469 /* Components.swift in Sources */,
+				C0861E30DDC041D33B567295 /* DemoMode.swift in Sources */,
+				045B5E18F740C6118D5AF586 /* EditorView.swift in Sources */,
+				5362A13A29917AEDBE1F7A18 /* HomeView.swift in Sources */,
+				D6F349F15905021C50005366 /* PhotoSaver.swift in Sources */,
+				12069E6791DCF3E2CFF85689 /* PrompterController.swift in Sources */,
+				FCC73C5664995C4A873E808F /* PrompterDocument.swift in Sources */,
+				6A520FB116C8F9735EB72666 /* PrompterSettings.swift in Sources */,
+				D83A28EE050F6E8923ABFB0D /* PrompterTextView.swift in Sources */,
+				C90AD6BADBC9A40262E1F920 /* RecorderModel.swift in Sources */,
+				CA2CC995CA0D515FDA1C174F /* RecorderView.swift in Sources */,
+				FCD499B96324A5E01E61D881 /* Script.swift in Sources */,
+				FEE1461D7B76322171601FED /* SettingsSheet.swift in Sources */,
+				C27B94FAFF6A83DC71E42A74 /* Style.swift in Sources */,
+				F8B1AAEBB75B1559491F798E /* TeleprompterApp.swift in Sources */,
+				E1F74470D5DFF744C2F7B868 /* VoiceTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2C80847033DC5C2CE957B38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cauecarneiro.teleprompter;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		565AB39C4BDB90D4D3162D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8B7F7G3Y2U;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9EFAC109DB484BE42FD13D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cauecarneiro.teleprompter;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B659E647F65267028D623B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8B7F7G3Y2U;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		579FAA475DA9777C3EBA2D02 /* Build configuration list for PBXProject "Teleprompter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B659E647F65267028D623B96 /* Debug */,
+				565AB39C4BDB90D4D3162D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD431B6B1CEA4C61E210C9E1 /* Build configuration list for PBXNativeTarget "Teleprompter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C80847033DC5C2CE957B38E /* Debug */,
+				9EFAC109DB484BE42FD13D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5725F10D91329B838F63CDC6 /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F1B7427DD49311BC4328355 /* TeleprompterCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeleprompterCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F839A74C3666CD3F82B8DE7B /* Project object */;
+}

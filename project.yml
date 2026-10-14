@@ -1,0 +1,53 @@
+name: Teleprompter
+options:
+  bundleIdPrefix: com.cauecarneiro
+  deploymentTarget:
+    iOS: "18.0"
+  developmentLanguage: pt-BR
+  groupSortPosition: top
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    # A mesma equipe do Perity e do Frila. Troque aqui se for assinar com outra.
+    DEVELOPMENT_TEAM: 8B7F7G3Y2U
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+packages:
+  TeleprompterCore:
+    path: Core
+targets:
+  Teleprompter:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    dependencies:
+      - package: TeleprompterCore
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Teleprompter
+        CFBundleName: Teleprompter
+        UILaunchScreen:
+          UIColorName: Fundo
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIRequiredDeviceCapabilities: [arm64]
+        UIUserInterfaceStyle: Dark
+        # Rolagem a 120 Hz nos iPhones com ProMotion.
+        CADisableMinimumFrameDurationOnPhone: true
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.photography
+        NSCameraUsageDescription: Para gravar o vídeo enquanto você lê o roteiro.
+        NSMicrophoneUsageDescription: Para gravar a sua voz junto com o vídeo e, no modo Voz, acompanhar a leitura.
+        NSPhotoLibraryAddUsageDescription: Para salvar cada take direto na sua galeria.
+        NSPhotoLibraryUsageDescription: Para guardar os takes no álbum Teleprompter da sua galeria.
+        NSSpeechRecognitionUsageDescription: No modo Voz, o texto anda sozinho no ritmo da sua fala. Quando o iPhone permite, o reconhecimento roda no próprio aparelho.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cauecarneiro.teleprompter
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        GENERATE_INFOPLIST_FILE: NO
