@@ -134,7 +134,8 @@ final class CameraController: NSObject, @unchecked Sendable {
             if connection.isVideoRotationAngleSupported(90) { connection.videoRotationAngle = 90 }
             if connection.isVideoMirroringSupported {
                 connection.automaticallyAdjustsVideoMirroring = false
-                connection.isVideoMirrored = c.side == .front && c.mirrorRecording
+                // Como o app nativo: a selfie sai no arquivo como aparece no preview (espelhada).
+                connection.isVideoMirrored = c.side == .front
             }
             if connection.isVideoStabilizationSupported {
                 connection.preferredVideoStabilizationMode = c.stabilization ? .standard : .off

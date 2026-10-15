@@ -59,7 +59,6 @@ struct CameraConfiguration: Equatable, Sendable {
     var resolution: VideoResolution
     var fps: Int
     var stabilization: Bool
-    var mirrorRecording: Bool
 }
 
 /// Preferências, guardadas no aparelho. Os padrões seguem a cola de gravação:
@@ -90,7 +89,6 @@ final class PrompterSettings {
     var resolution: VideoResolution = .uhd4K { didSet { save(resolution.rawValue, "resolution") } }
     var fps: Int = 30 { didSet { save(fps, "fps") } }
     var stabilization = true { didSet { save(stabilization, "stabilization") } }
-    var mirrorRecording = false { didSet { save(mirrorRecording, "mirrorRecording") } }
     var showGuides = false { didSet { save(showGuides, "showGuides") } }
 
     // Gravação
@@ -101,7 +99,7 @@ final class PrompterSettings {
     var cameraConfiguration: CameraConfiguration {
         CameraConfiguration(
             side: cameraSide, backLens: backLens, resolution: resolution,
-            fps: fps, stabilization: stabilization, mirrorRecording: mirrorRecording
+            fps: fps, stabilization: stabilization
         )
     }
 
@@ -130,7 +128,6 @@ final class PrompterSettings {
         if let v = d.string(forKey: "resolution").flatMap(VideoResolution.init) { resolution = v }
         if let v = d.object(forKey: "fps") as? Int { fps = v }
         if let v = d.object(forKey: "stabilization") as? Bool { stabilization = v }
-        if let v = d.object(forKey: "mirrorRecording") as? Bool { mirrorRecording = v }
         if let v = d.object(forKey: "showGuides") as? Bool { showGuides = v }
         if let v = d.object(forKey: "saveToAlbum") as? Bool { saveToAlbum = v }
     }

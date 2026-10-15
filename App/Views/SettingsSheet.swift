@@ -64,9 +64,6 @@ struct SettingsSheet: View {
                         Text("60").tag(60)
                     }
                     Toggle("Estabilização", isOn: $settings.stabilization)
-                    if settings.cameraSide == .front {
-                        Toggle("Espelhar o vídeo salvo", isOn: $settings.mirrorRecording)
-                    }
                     Toggle("Grade e zona segura do Reels", isOn: $settings.showGuides)
                 } header: {
                     Text("Câmera")
